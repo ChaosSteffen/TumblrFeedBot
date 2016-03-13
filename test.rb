@@ -1,0 +1,34 @@
+# frozen_string_literal: true
+require 'simplecov'
+SimpleCov.start do
+  add_filter '/tests/'
+  add_filter '/config/'
+end
+
+ENV['RACK_ENV'] = 'test'
+
+require 'minitest/autorun'
+require 'rack/test'
+require 'rack-minitest/json'
+require 'rack-minitest/assertions'
+require 'mocha/mini_test'
+
+require './config/requires'
+require './config/config_test'
+
+include Rack::Test::Methods
+include Rack::Minitest::JSON
+include Rack::Minitest::Assertions
+
+def app
+  @app ||= Bot.new
+end
+
+def replace_app(new_bot, &block)
+  old_bot = @app
+  @app = new_bot
+  yield(block)
+  @app = old_bot
+end
+
+Dir['./tests/**/*.rb'].each { |file| require file }

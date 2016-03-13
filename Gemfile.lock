@@ -1,0 +1,60 @@
+GIT
+  remote: git://github.com/brandonweiss/rack-minitest.git
+  revision: ff8669c284e05c3cba8d14b867165c103283a167
+  specs:
+    rack-minitest (0.0.10)
+      json
+      minitest (~> 5.0)
+      rack-test
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    docile (1.1.5)
+    faraday (0.9.2)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.9.2)
+      faraday (>= 0.7.4, < 0.10)
+    json (1.8.3)
+    metaclass (0.0.4)
+    mime-types (3.0)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2015.1120)
+    minitest (5.8.4)
+    mocha (1.1.0)
+      metaclass (~> 0.0.1)
+    multipart-post (2.0.0)
+    oauth (0.5.0)
+    rack (1.6.4)
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    redis (3.2.2)
+    simple_oauth (0.3.1)
+    simplecov (0.11.2)
+      docile (~> 1.1.0)
+      json (~> 1.8)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
+    tumblr_client (0.8.5)
+      faraday (~> 0.9.0)
+      faraday_middleware (~> 0.9.0)
+      json
+      mime-types
+      oauth
+      simple_oauth
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  minitest
+  mocha
+  rack
+  rack-minitest!
+  rack-test
+  redis
+  simplecov
+  tumblr_client
+
+BUNDLED WITH
+   1.11.2
