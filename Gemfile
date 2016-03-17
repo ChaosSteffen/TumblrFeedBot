@@ -5,10 +5,12 @@ gem 'rack'
 gem 'redis'
 gem 'tumblr_client'
 
+gem 'telegram-webhooks', git: 'git://github.com/ChaosSteffen/telegram-webhooks'
+
 group :test do
   gem 'minitest'
   gem 'rack-test'
-  gem "rack-minitest", git: "git://github.com/brandonweiss/rack-minitest.git"
+  gem 'rack-minitest', git: 'git://github.com/brandonweiss/rack-minitest.git'
   gem 'mocha'
   gem 'simplecov', require: false
 end

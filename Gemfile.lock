@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/ChaosSteffen/telegram-webhooks
+  revision: f3578c5388f2b457559c8d909b997cdb65e7848b
+  specs:
+    telegram-webhooks (0.0.1)
+      rack (~> 1)
+
+GIT
   remote: git://github.com/brandonweiss/rack-minitest.git
   revision: ff8669c284e05c3cba8d14b867165c103283a167
   specs:
@@ -54,6 +61,7 @@ DEPENDENCIES
   rack-test
   redis
   simplecov
+  telegram-webhooks!
   tumblr_client
 
 BUNDLED WITH
