@@ -4,3 +4,6 @@ rvm:
 services:
  - redis-server
 script: bundle exec ruby test.rb
+addons:
+  code_climate:
+    repo_token: 228f34eb30d7a738954e24c669b1aa8b4e08fd15eeec7392def3be1d419e2218

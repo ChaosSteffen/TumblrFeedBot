@@ -1,9 +1,6 @@
 # frozen_string_literal: true
-require 'simplecov'
-SimpleCov.start do
-  add_filter '/tests/'
-  add_filter '/config/'
-end
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
 
 ENV['RACK_ENV'] = 'test'
 
