@@ -5,7 +5,7 @@ gem 'rack'
 gem 'redis'
 gem 'tumblr_client'
 
-gem 'telegram-webhooks', git: 'git://github.com/ChaosSteffen/telegram-webhooks'
+gem 'telegram-webhooks'
 
 group :test do
   gem 'minitest'

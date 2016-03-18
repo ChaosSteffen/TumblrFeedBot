@@ -1,11 +1,4 @@
 GIT
-  remote: git://github.com/ChaosSteffen/telegram-webhooks
-  revision: f3578c5388f2b457559c8d909b997cdb65e7848b
-  specs:
-    telegram-webhooks (0.0.1)
-      rack (~> 1)
-
-GIT
   remote: git://github.com/brandonweiss/rack-minitest.git
   revision: ff8669c284e05c3cba8d14b867165c103283a167
   specs:
@@ -44,6 +37,8 @@ GEM
       json (~> 1.8)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
+    telegram-webhooks (0.1.0)
+      rack (~> 1.6.4)
     tumblr_client (0.8.5)
       faraday (~> 0.9.0)
       faraday_middleware (~> 0.9.0)
@@ -63,7 +58,7 @@ DEPENDENCIES
   rack-minitest!
   rack-test
   redis
-  telegram-webhooks!
+  telegram-webhooks
   tumblr_client
 
 BUNDLED WITH
